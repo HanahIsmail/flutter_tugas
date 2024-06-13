@@ -53,6 +53,8 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
+          // Space between AppBar and Column
+          SizedBox(height: 10),
           // Flexible untuk GridView
           Flexible(
             flex: 3,
@@ -66,9 +68,11 @@ class _HomePageState extends State<HomePage> {
               }),
             ),
           ),
+          // Space between GridView and ListView
+          SizedBox(height: 10),
           // SizedBox untuk ListView dengan tinggi tetap
           SizedBox(
-            height: 185, // Atur tinggi sesuai kebutuhan Anda
+            height: 190, // Atur tinggi sesuai kebutuhan Anda
             child: ListView.builder(
               itemCount: items.length,
               itemBuilder: (context, index) {
